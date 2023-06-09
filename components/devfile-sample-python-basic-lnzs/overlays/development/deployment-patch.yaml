@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-lnzs
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pkumari_org/build-e2e-bxtg-tenant/test-app-stho/devfile-sample-python-basic-lnzs@sha256:01fdff32a766db0fbb3ff5e7db3e7538d765f3f42052d1f5c3f8daaf5cfba0f7
+        name: my-python
+        resources: {}
+status: {}
